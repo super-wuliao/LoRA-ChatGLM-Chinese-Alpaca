@@ -1,5 +1,7 @@
 此文件适用于以chatglm为基准模型进行lora训练的情况
 # 数据预处理
+数据集形式be like：
+![image](https://github.com/super-wuliao/LoRA-ChatGLM-Chinese-Alpaca/blob/main/chatglm_lora/c79bd6d1d5096b3067f3b58e76c45ff.png)
 转化微调训练数据集（以alpaca数据集为例）为jsonl
 
     python cover_alpaca2jsonl.py \
