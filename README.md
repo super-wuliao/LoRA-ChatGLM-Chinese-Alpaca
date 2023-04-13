@@ -1,5 +1,5 @@
 # LoRA-ChatGLM-Chinese-Alpaca
-  为了促进大模型在中文NLP社区的开放研究，
+  为了促进大模型在中文NLP社区的开放研究以及广大垂直领域的应用，
 本项目使用LoRA对基于清华[ChatGLM](https://github.com/THUDM/ChatGLM-6B)（中英双语训练）以及其他大佬使用[中文指令精调的Alpaca大模型](https://github.com/ymcui/Chinese-LLaMA-Alpaca)进行进一步的微调，并给出训练得到的LoRA权重及与原模型参数融合的方式，各位可以根据需求自取。
 
 针对ChatGLM模型，因为其本身预训练的语料就包含了大量中文，已经能生成相当符合人类偏好的回答，因此对其进行进一步的通用中文指令精调意义不大，
