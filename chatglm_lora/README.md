@@ -1,22 +1,26 @@
 此文件适用于以chatglm为基准模型进行lora训练的情况
-数据预处理
-转化alpaca数据集为jsonl
+# 数据预处理
+转化微调训练数据集（以alpaca数据集为例）为jsonl
 
-python cover_alpaca2jsonl.py \
+    python cover_alpaca2jsonl.py \
     --data_path data/alpaca_data.json \
     --save_path data/alpaca_data.jsonl \
+	
 tokenization
 
-python tokenize_dataset_rows.py \
+    python tokenize_dataset_rows.py \
     --jsonl_path data/alpaca_data.jsonl \
     --save_path data/alpaca \
     --max_seq_length 200 \ 
     --skip_overlength
+
 --jsonl_path 微调的数据路径, 格式jsonl, 对每行的['context']和['target']字段进行encode
+
 --save_path 输出路径
+
 --max_seq_length 样本的最大长度
-训练
-python finetune.py \
+# 训练
+    python finetune.py \
     --dataset_path data/alpaca \
     --lora_rank 8 \
     --per_device_train_batch_size 6 \
