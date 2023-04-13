@@ -23,7 +23,7 @@ LoRA，英文全称[Low-Rank Adaptation of Large Language Models](https://arxiv.
 
 
 # LoRA微调
-这一部分主要参考[ChatGLM-Tuning](https://github.com/mymusise/ChatGLM-Tuning)的代码
+这一部分主要参考[ChatGLM-Tuning](https://github.com/mymusise/ChatGLM-Tuning)的代码，由于使用了两个基准模型，因此相关代码分别放到了chatglm_lora和chinese_alpaca_lora两个文件夹中
 
 
 # LoRA模型融合
